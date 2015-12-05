@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 简介
 
 项目基于Facebook的开源项目xhprof，用于检测系统性能瓶颈。
@@ -48,5 +49,4 @@ include_once "/paht/to/xhprof-web/include.php";
 引起这个错误可能有两个原因。
     * php.ini中`xhprof.output_dir=/data1/xhprof_output`这条配置有问题。可能是该指定的目录不存在，也可能是目录不可写，也可能是目录满了，自行确认一下即可。如果要改动这条配置，切记需要重启`php-fpm`才生效。
     * 系统上graphviz未安装。如果编译安装，请先安装`libpng`的依赖，因为xhprof用的是png格式的图片，需要在编译graphviz时加上`--with-png=yes`参数。如果使用yum，则需要安装`graphviz/graphviz-devel/libpng/libpng-devel`（可能不太准确，自行判断吧）。
-
-2. 
+2. Nginx的配置不用按照自己的具体情况而定，一般仿照自己项目的写法即可。
